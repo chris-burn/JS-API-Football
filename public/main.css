@@ -1,0 +1,90 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background: url("http://www.solidbackgrounds.com/images/2880x1800/2880x1800-light-blue-solid-color-background.jpg"); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img {
+  height: 250px;
+  width: 600px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 1rem;
+}
+
+.img-responsive {
+  max-width: 100%;
+  padding: 5px 5px 5px 5px;
+}
+
+.cell img {
+  display: block;
+}
+
+@media screen and (min-width: 200px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: calc(50% - 3rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 3rem);
+  }
+}
+
+.cell {
+  margin: 3rem;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-spacing: 5px;
+  padding: 5px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div.space1{
+  height: 30px;
+}
+
+select {
+  margin: auto;
+}
+
+ul{
+  list-style-type: none; 
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px;
+}
+
+div #pie-chart {
+  padding: 40px 25px 40px 0px;
+}
+
+div #bar-chart {
+  padding: 40px 25px 40px 0px;
+}
+
+
+
+
+
+

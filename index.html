@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>English Premier League, 2016/17 - Statistics</title>
+  <script src='index.js'></script>
+  <script type="text/javascript" src='http://code.highcharts.com/highcharts.js'></script>
+  <script type="text/javascript" src="pieChart.js"></script>
+  <script type="text/javascript" src="barChart.js"></script>
+  <link rel='stylesheet' type='text/css' href='main.css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!--   <script src="lodash.js"></script> -->
+</head>
+<body>
+  <a href="https://www.premierleague.com/">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/1280px-Premier_League_Logo.svg.png", id="logo"/>
+  </a>
+  <h1>English Premier League</h1>  
+  <h1>Season 2016/17</h1>
+  <div class="container">
+    <div class="grid" id="team-grid">
+    </div>
+  </div> 
+  <div class="space1">
+  </div>
+  <div class="table" id="table-div" style="width: 50%; float:left">
+    <h2>Final Table:</h2>
+    <table id="league-table">
+    </table>
+  </div>
+  <div class="space2">
+  </div>
+  <div class="dropdown" style="width: 50%; float:right">
+    <h2>Season Statistics:</h2>
+    <select id='team-dropdown'>
+    <option selected="selected">Choose a Team</option>
+    </select>
+    <ul id="data-list"></ul>
+    <div id="pie-chart"></div>
+    <div id="bar-chart"></div>
+  </div>
+  <div id="comparison-chart"></div>
+</body>
+</html>
+
+
