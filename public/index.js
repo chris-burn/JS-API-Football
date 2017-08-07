@@ -37,7 +37,7 @@ var requestComplete2 = function(){
   // console.log(leagueObject);
   populateTable(leagueObject.standing);
   populateDropDown(leagueObject.standing);
-  // displayComparisonChart(leagueObject.standing);
+  displayComparisonChart(leagueObject.standing);
 };
 
 var populateGrid = function(teams){
@@ -152,36 +152,9 @@ var displayBar = function(team){
   BarChartTeam(team);
 };
 
-// var displayComparisonChart = function(positions){
-//     var container = document.getElementById('comparison-chart');
-
-//     for (var i = 0; i < positions.length; i++){
-//       var team = positions[i];
-//     };
-    
-//     var chart = new Highcharts.Chart({
-//       chart: {
-//         type: 'column',
-//         renderTo: container,
-//         backgroundColor: null
-//       },
-//       title: {
-//         text: "Goals Comparison"
-//       },
-//       plotOptions: {column:{colorByPoint: true}},
-//       colors: ["green", "orangered"],
-//       series: [{
-//         name: "Goals",
-//         data: [team.goals,team.goalsAgainst]
-//       }],
-//       xAxis: {
-//         categories: ['For', 'Against']
-//       },
-//       yAxis: {
-//         title: {text: "Number of Goals"}
-//       }
-//     });
-    
-// };
+var displayComparisonChart = function(positions){
+    var container = document.getElementById('comparison-chart');
+    comparisonChart(container, positions);
+};
   
 window.addEventListener('load', app);

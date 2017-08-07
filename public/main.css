@@ -64,6 +64,10 @@ div.space1{
   height: 30px;
 }
 
+div.space3{
+  height: 30px;
+}
+
 select {
   margin: auto;
 }
